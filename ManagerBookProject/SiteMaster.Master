@@ -73,14 +73,14 @@
     </ul>
   </div>
 </nav>
-        </div>
+</div>
      
-        <!--Body Content-->
+       <!-- Main Content Placeholder -->
         <div>
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
         </div>
-        <!--Body Content-->
+      <!-- Main Content Placeholder -->
 
          <!--Footer-->
              <footer>
@@ -111,10 +111,8 @@
                     </div>
                     </div>
                 </div>
-    </footer>
+             </footer>
+         <!--Footer-->
     </form>
-
-   
-    
 </body>
 </html>
