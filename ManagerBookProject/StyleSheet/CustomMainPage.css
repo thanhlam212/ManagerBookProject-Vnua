@@ -1,0 +1,21 @@
+﻿.footerlinks {
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
+    .footerlinks:hover {
+        color: #078B8B;
+    }
+
+#Footer {
+    background: #105EDD;
+}
+
+#SecordFooter {
+    background: #5F84F1;
+}
+
+#navbarMain {
+    color: #ffffff;
+}
+    
