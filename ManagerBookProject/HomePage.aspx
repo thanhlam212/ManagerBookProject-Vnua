@@ -16,7 +16,7 @@
                </center>
             </div>
 
-             <div class="row">
+          <div class="row">
             <div class="col-md-4">
                <center>
                   <img width="150px" src="Image/digital-inventory.png"/>
@@ -52,9 +52,11 @@
                   </p>
                </center>
             </div>
-            
+        </div>
+      </div>
+   </section>
 
-            <section>
+     <section>
       <div class="container">
          <div class="row">
             <div class="col-12">
