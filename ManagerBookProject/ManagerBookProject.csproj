@@ -67,7 +67,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Boostrap\css\bootstrap.min.css" />
+    <Content Include="Boostrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Boostrap\js\dist_js_bootstrap.min.js" />
+    <Content Include="Boostrap\js\dist_umd_popper.min.js" />
+    <Content Include="Fontawesome\css\all.css" />
+    <Content Include="Fontawesome\css\all.min.css" />
+    <Content Include="Fontawesome\css\brands.css" />
+    <Content Include="Fontawesome\css\brands.min.css" />
+    <Content Include="Fontawesome\css\fontawesome.css" />
+    <Content Include="Fontawesome\css\fontawesome.min.css" />
+    <Content Include="Fontawesome\css\regular.css" />
+    <Content Include="Fontawesome\css\regular.min.css" />
+    <Content Include="Fontawesome\css\solid.css" />
+    <Content Include="Fontawesome\css\solid.min.css" />
+    <Content Include="Fontawesome\css\svg-with-js.css" />
+    <Content Include="Fontawesome\css\svg-with-js.min.css" />
+    <Content Include="Fontawesome\css\v4-font-face.css" />
+    <Content Include="Fontawesome\css\v4-font-face.min.css" />
+    <Content Include="Fontawesome\css\v4-shims.css" />
+    <Content Include="Fontawesome\css\v4-shims.min.css" />
+    <Content Include="Fontawesome\css\v5-font-face.css" />
+    <Content Include="Fontawesome\css\v5-font-face.min.css" />
     <Content Include="Global.asax" />
+    <Content Include="Tabledata\css\cdn.datatables.net_1.13.6_css_jquery.dataTables.min.css" />
+    <Content Include="Tabledata\js\cdn.datatables.net_1.13.6_js_jquery.dataTables.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
