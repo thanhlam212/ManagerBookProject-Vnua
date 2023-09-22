@@ -94,7 +94,7 @@
                             &nbsp;
                             <asp:LinkButton class="footerlinks" ID="LinkButton12" runat="server">Publisher Management</asp:LinkButton>
                             &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="LinkButton8" runat="server">Book Inventory</asp:LinkButton>
+                            <asp:LinkButton class="footerlinks" ID="LinkButton8" href="AdminBookIssuing.aspx" runat="server">Book Inventory</asp:LinkButton>
                             &nbsp;
                             <asp:LinkButton class="footerlinks" ID="LinkButton9" runat="server">Book Issuing</asp:LinkButton>
                             &nbsp;
