@@ -69,7 +69,9 @@
   <ItemGroup>
     <Content Include="AdminAuthorManagement.aspx" />
     <Content Include="AdminBookIssuing.aspx" />
+    <Content Include="AdminBookIventory.aspx" />
     <Content Include="AdminLogin.aspx" />
+    <Content Include="AdminMemberManagement.aspx" />
     <Content Include="AdminPublisherManagement.aspx" />
     <Content Include="Boostrap\css\bootstrap.min.css" />
     <Content Include="Boostrap\js\bootstrap.bundle.min.js" />
@@ -149,12 +151,26 @@
     <Compile Include="AdminBookIssuing.aspx.designer.cs">
       <DependentUpon>AdminBookIssuing.aspx</DependentUpon>
     </Compile>
+    <Compile Include="AdminBookIventory.aspx.cs">
+      <DependentUpon>AdminBookIventory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminBookIventory.aspx.designer.cs">
+      <DependentUpon>AdminBookIventory.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminLogin.aspx.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMemberManagement.aspx.cs">
+      <DependentUpon>AdminMemberManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminMemberManagement.aspx.designer.cs">
+      <DependentUpon>AdminMemberManagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="AdminPublisherManagement.aspx.cs">
       <DependentUpon>AdminPublisherManagement.aspx</DependentUpon>
