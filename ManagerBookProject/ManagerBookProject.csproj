@@ -67,7 +67,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AdminAuthorManagement.aspx" />
     <Content Include="AdminLogin.aspx" />
+    <Content Include="AdminPublisherManagement.aspx" />
     <Content Include="Boostrap\css\bootstrap.min.css" />
     <Content Include="Boostrap\js\bootstrap.bundle.min.js" />
     <Content Include="Boostrap\js\dist_js_bootstrap.min.js" />
@@ -105,6 +107,7 @@
     <Content Include="Fontawesome\js\v4-shims.js" />
     <Content Include="Fontawesome\js\v4-shims.min.js" />
     <Content Include="Global.asax" />
+    <Content Include="Image\avatar1.jpg" />
     <Content Include="Image\adminuser.png" />
     <Content Include="Image\book-online.png" />
     <Content Include="Image\books.png" />
@@ -125,17 +128,32 @@
     <Content Include="Tabledata\css\cdn.datatables.net_1.13.6_css_jquery.dataTables.min.css" />
     <Content Include="Tabledata\js\cdn.datatables.net_1.13.6_js_jquery.dataTables.min.js" />
     <Content Include="UserLogin.aspx" />
+    <Content Include="UserProfile.aspx" />
     <Content Include="UserSignUp.aspx" />
     <Content Include="Web.config" />
     <Content Include="HomePage.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminAuthorManagement.aspx.cs">
+      <DependentUpon>AdminAuthorManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminAuthorManagement.aspx.designer.cs">
+      <DependentUpon>AdminAuthorManagement.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AdminLogin.aspx.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AdminLogin.aspx.designer.cs">
       <DependentUpon>AdminLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPublisherManagement.aspx.cs">
+      <DependentUpon>AdminPublisherManagement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminPublisherManagement.aspx.designer.cs">
+      <DependentUpon>AdminPublisherManagement.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -161,6 +179,13 @@
     </Compile>
     <Compile Include="UserLogin.aspx.designer.cs">
       <DependentUpon>UserLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserSignUp.aspx.cs">
       <DependentUpon>UserSignUp.aspx</DependentUpon>
