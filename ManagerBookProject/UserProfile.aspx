@@ -1,23 +1,25 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMaster.Master" AutoEventWireup="true" CodeBehind="UserSignUp.aspx.cs" Inherits="ManagerBookProject.UserSignUp" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteMaster.Master" AutoEventWireup="true" CodeBehind="UserProfile.aspx.cs" Inherits="ManagerBookProject.UserProfile" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
-   <div class="container">
+    <div class="container-fluid">
       <div class="row">
-         <div class="col-md-7 mx-auto">
+         <div class="col-md-5">
             <div class="card">
                <div class="card-body">
                   <div class="row">
                      <div class="col">
                         <center>
-                           <img width="100px" src="../Image/generaluser.png"/>
+                           <img width="100px" src="Image/avatar1.jpg"/>
                         </center>
                      </div>
                   </div>
                   <div class="row">
                      <div class="col">
                         <center>
-                           <h4>Member Sign Up</h4>                       
+                           <h4>Your Profile</h4>
+                           <span>Account Status - </span>
+                           <asp:Label class="badge text-bg-primary" ID="Label1" runat="server" Text="Your status"></asp:Label>
                         </center>
                      </div>
                   </div>
@@ -59,13 +61,13 @@
                         <label>State</label>
                         <div class="form-group">
                            <asp:DropDownList class="form-control" ID="DropDownList1" runat="server">
-                              <asp:ListItem Text="Select" Value="select" />
-                              <asp:ListItem Text="Andhra Pradesh" Value="Andhra Pradesh" />
-                              <asp:ListItem Text="Arunachal Pradesh" Value="Arunachal Pradesh" />
-                              <asp:ListItem Text="Assam" Value="Assam" />
-                              <asp:ListItem Text="Bihar" Value="Bihar" />
-                              <asp:ListItem Text="Chhattisgarh" Value="Chhattisgarh" />
-                              <asp:ListItem Text="Rajasthan" Value="Rajasthan" />
+                              <asp:ListItem Text="Thach Ban" Value="Thach Ban" />
+                              <asp:ListItem Text="Gia Lam" Value="Gia Lam" />
+                              <asp:ListItem Text="An Dao" Value="An Dao" />
+                              <asp:ListItem Text="Sky Net ?" Value="Sky Net ?" />
+                              <asp:ListItem Text="Epic" Value="Epic" />
+                              <asp:ListItem Text="Moscow" Value="Moscow" />
+                              <asp:ListItem Text="Le Thanh Nghi" Value="Le Thanh Nghi" />
                               <asp:ListItem Text="Goa" Value="Goa" />
                               <asp:ListItem Text="Gujarat" Value="Gujarat" />
                               <asp:ListItem Text="Haryana" Value="Haryana" />
@@ -109,47 +111,82 @@
                   <div class="row">
                      <div class="col">
                         <label>Full Address</label>
-                        <div class="form-group mb-3">
-                           <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server" placeholder="Full Address" TextMode="MultiLine" Rows="2" Height="192px"></asp:TextBox>
+                        <div class="form-group">
+                           <asp:TextBox CssClass="form-control" ID="TextBox5" runat="server" placeholder="Full Address" TextMode="MultiLine" Rows="2" Height="106px"></asp:TextBox>
                         </div>
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col mb-3">
+                     <div class="col">
                         <center>
-                           <span class="badge text-bg-success">Login Credentials</span>
+                           <span class="badge text-bg-info">Login Credentials</span>
                         </center>
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col">
+                     <div class="col-md-4">
                         <label>User ID</label>
                         <div class="form-group">
                            <asp:TextBox class="form-control" ID="TextBox8" runat="server" placeholder="User ID" ReadOnly="True"></asp:TextBox>
                         </div>
                      </div>
-                     
-                     <div class="col">
-                        <label>Password</label>
+                     <div class="col-md-4">
+                        <label>Old Password</label>
+                        <div class="form-group">
+                           <asp:TextBox class="form-control" ID="TextBox9" runat="server" placeholder="Email ID" TextMode="Password" ReadOnly="True"></asp:TextBox>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <label>New Password</label>
                         <div class="form-group mb-3">
                            <asp:TextBox class="form-control" ID="TextBox10" runat="server" placeholder="Email ID" TextMode="Password"></asp:TextBox>
                         </div>
                      </div>
                   </div>
                   <div class="row">
-                     <div class="col-8">
+                     <div class="col-8 ">
                         <center>
-                           <div class="form-group ">
-                              <asp:Button class="btn btn-success btn-block btn-sm" ID="Button1" runat="server" Text="Sign Up" Width="714px" />
+                           <div class="form-group">
+                              <asp:Button class="btn btn-primary btn-block btn-lg" ID="Button1" runat="server" Text="Update" Width="714px" />
                            </div>
                         </center>
                      </div>
                   </div>
                </div>
             </div>
-            <a href="../HomePage.aspx"><< Back to Home</a><br><br>
+            <a href="homepage.aspx"><< Back to Home</a><br><br>
+         </div>
+         <div class="col-md-7">
+            <div class="card">
+               <div class="card-body">
+                  <div class="row">
+                     <div class="col">
+                        <center>
+                           <img width="100px" src="Image/books1.png"/>
+                        </center>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col">
+                        <center>
+                           <h4>Your Issued Books</h4>
+                           <asp:Label class="badge text-bg-secondary" ID="Label2" runat="server" Text="your books info"></asp:Label>
+                        </center>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col">
+                        <hr>
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col">
+                        <asp:GridView class="table table-striped table-bordered table-hover" ID="GridView1" runat="server"></asp:GridView>
+                     </div>
+                  </div>
+               </div>
+            </div>
          </div>
       </div>
    </div>
 </asp:Content>
-
