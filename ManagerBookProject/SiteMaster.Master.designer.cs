@@ -87,48 +87,48 @@ namespace ManagerBookProject
         protected global::System.Web.UI.WebControls.LinkButton adminLogin;
 
         /// <summary>
-        /// LinkButton11 control.
+        /// AuthorMng control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton11;
+        protected global::System.Web.UI.WebControls.LinkButton AuthorMng;
 
         /// <summary>
-        /// LinkButton12 control.
+        /// PublisherMng control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton12;
+        protected global::System.Web.UI.WebControls.LinkButton PublisherMng;
 
         /// <summary>
-        /// LinkButton8 control.
+        /// BookIvt control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton8;
+        protected global::System.Web.UI.WebControls.LinkButton BookIvt;
 
         /// <summary>
-        /// LinkButton9 control.
+        /// BookIss control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton9;
+        protected global::System.Web.UI.WebControls.LinkButton BookIss;
 
         /// <summary>
-        /// LinkButton10 control.
+        /// MemberMng control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButton10;
+        protected global::System.Web.UI.WebControls.LinkButton MemberMng;
     }
 }
