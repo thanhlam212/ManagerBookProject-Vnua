@@ -15,30 +15,30 @@ namespace ManagerBookProject
     {
 
         /// <summary>
-        /// TextBox1 control.
+        /// tbAdminId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox tbAdminId;
 
         /// <summary>
-        /// TextBox2 control.
+        /// tbAdminPass control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox tbAdminPass;
 
         /// <summary>
-        /// Button1 control.
+        /// btnAdminLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button btnAdminLogin;
     }
 }
