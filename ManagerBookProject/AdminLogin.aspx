@@ -30,14 +30,14 @@
                      <div class="col">
                         
                         <div class="form-group mb-3">
-                           <asp:TextBox CssClass="form-control" ID="TextBox1" runat="server" placeholder="Admin ID"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="tbAdminId" runat="server" placeholder="Admin ID"></asp:TextBox>
                         </div>
                         
                         <div class="form-group mb-3">
-                           <asp:TextBox CssClass="form-control" ID="TextBox2" runat="server" placeholder="*********" TextMode="Password"></asp:TextBox>
+                           <asp:TextBox CssClass="form-control" ID="tbAdminPass" runat="server" placeholder="*********" TextMode="Password"></asp:TextBox>
                         </div>
                         <div class="form-group ">
-                           <asp:Button class="btn btn-success btn-block" ID="Button1" runat="server" Text="Login" Width="600px" />
+                           <asp:Button class="btn btn-success btn-block" ID="btnAdminLogin" runat="server" Text="Login" Width="600px" OnClick="btnAdminLogin_Click" />
                         </div>
                      </div>
                   </div>

@@ -59,37 +59,20 @@
                         <label>State</label>
                         <div class="form-group">
                            <asp:DropDownList class="form-control" ID="ddListState" runat="server">
-                              <asp:ListItem Text="Select" Value="select" />
+                              <asp:ListItem Text="Moscow" Value="Moscow" />
                               <asp:ListItem Text="Andhra Pradesh" Value="Andhra Pradesh" />
-                              <asp:ListItem Text="Arunachal Pradesh" Value="Arunachal Pradesh" />
-                              <asp:ListItem Text="Assam" Value="Assam" />
-                              <asp:ListItem Text="Bihar" Value="Bihar" />
-                              <asp:ListItem Text="Chhattisgarh" Value="Chhattisgarh" />
-                              <asp:ListItem Text="Rajasthan" Value="Rajasthan" />
-                              <asp:ListItem Text="Goa" Value="Goa" />
-                              <asp:ListItem Text="Gujarat" Value="Gujarat" />
-                              <asp:ListItem Text="Haryana" Value="Haryana" />
-                              <asp:ListItem Text="Himachal Pradesh" Value="Himachal Pradesh" />
-                              <asp:ListItem Text="Jammu and Kashmir" Value="Jammu and Kashmir" />
-                              <asp:ListItem Text="Jharkhand" Value="Jharkhand" />
-                              <asp:ListItem Text="Karnataka" Value="Karnataka" />
-                              <asp:ListItem Text="Kerala" Value="Kerala" />
-                              <asp:ListItem Text="Madhya Pradesh" Value="Madhya Pradesh" />
-                              <asp:ListItem Text="Maharashtra" Value="Maharashtra" />
-                              <asp:ListItem Text="Manipur" Value="Manipur" />
-                              <asp:ListItem Text="Meghalaya" Value="Meghalaya" />
-                              <asp:ListItem Text="Mizoram" Value="Mizoram" />
-                              <asp:ListItem Text="Nagaland" Value="Nagaland" />
-                              <asp:ListItem Text="Odisha" Value="Odisha" />
-                              <asp:ListItem Text="Punjab" Value="Punjab" />
-                              <asp:ListItem Text="Rajasthan" Value="Rajasthan" />
-                              <asp:ListItem Text="Sikkim" Value="Sikkim" />
-                              <asp:ListItem Text="Tamil Nadu" Value="Tamil Nadu" />
-                              <asp:ListItem Text="Telangana" Value="Telangana" />
-                              <asp:ListItem Text="Tripura" Value="Tripura" />
-                              <asp:ListItem Text="Uttar Pradesh" Value="Uttar Pradesh" />
-                              <asp:ListItem Text="Uttarakhand" Value="Uttarakhand" />
-                              <asp:ListItem Text="West Bengal" Value="West Bengal" />
+                              <asp:ListItem Text="Berlin" Value="Berlin" />
+                              <asp:ListItem Text="Ba Đình" Value="Ba Đình" />
+                              <asp:ListItem Text="Hoàn Kiếm" Value="Hoàn Kiếm" />
+                              <asp:ListItem Text="Tây Hồ" Value="Tây Hồ" />
+                              <asp:ListItem Text="Long Biên" Value="Long Biên" />
+                              <asp:ListItem Text="Cầu Giấy" Value="Cầu Giấy" />
+                              <asp:ListItem Text="Đống Đa" Value="Đống Đa" />
+                              <asp:ListItem Text="Hai Bà Trưng" Value="Hai Bà Trưng" />
+                              <asp:ListItem Text="Hoàng Mai" Value="Hoàng Mai" />
+                              <asp:ListItem Text="Hà Đông" Value="Hà Đông" />
+                              <asp:ListItem Text="Bắc Từ Liêm" Value="Bắc Từ Liêm" />
+                              <asp:ListItem Text="Nam Từ Liêm" Value="Nam Từ Liêm" />
                            </asp:DropDownList>
                         </div>
                      </div>
