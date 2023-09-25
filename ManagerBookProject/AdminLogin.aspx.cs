@@ -40,7 +40,7 @@ namespace ManagerBookProject
                         Response.Write("<script>alert('Login Successful !');</script>");
                         Session["username"] = dr.GetValue(0).ToString();
                         Session["fullname"] = dr.GetValue(2).ToString();
-                        Session["role"] = "admin";
+                        Session["role"] = "Admin";
                         
                     }
                     Response.Redirect("HomePage.aspx");
