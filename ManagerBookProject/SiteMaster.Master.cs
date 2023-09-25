@@ -31,14 +31,14 @@ namespace ManagerBookProject
                         BookIss.Visible = false;
                         MemberMng.Visible = false;
                     }
-                    else if (role.Equals("user"))
+                    else if (role.Equals("User"))
                     {
                         userLink.Visible = false;
                         signUpLink.Visible = false;
 
                         logOutLink.Visible = true;
                         HelooUserLink.Visible = true;
-                        HelooUserLink.Text = "Hello" + Session["username"].ToString();
+                        HelooUserLink.Text = "Hello " + Session["username"].ToString();
 
                         adminLogin.Visible = true;
                         AuthorMng.Visible = false;
@@ -47,14 +47,14 @@ namespace ManagerBookProject
                         BookIss.Visible = false;
                         MemberMng.Visible = false;
                     }
-                    else if (role.Equals("admin"))
+                    else if (role.Equals("Admin"))
                     {
                         userLink.Visible = false;
                         signUpLink.Visible = false;
 
                         logOutLink.Visible = true;
                         HelooUserLink.Visible = true;
-                        HelooUserLink.Text = "Hello Admin" + Session["fullname"].ToString();
+                        HelooUserLink.Text = "Hello Admin " + Session["fullname"].ToString();
 
                         adminLogin.Visible = false;
                         AuthorMng.Visible = true;
