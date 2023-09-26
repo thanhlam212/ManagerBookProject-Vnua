@@ -95,11 +95,26 @@ namespace ManagerBookProject
                 cmd.ExecuteNonQuery();
                 con.Close();
                 Response.Write("<script>alert('Sign Up Successfully ! Go to User Login to Login');</script>");
+                clearField();
             }
             catch (Exception ex)
             {
                 Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
+        }
+
+        protected void clearField()
+        {
+            tbFName.Text = "";
+            tbDOB.Text = "";
+            tbCity.Text = "";
+            tbContactNo.Text = "";
+            tbEmail.Text = "";
+            tbFAdress.Text = "";
+            tbUserID.Text = "";
+            tbPassword.Text = "";
+            tbPincode.Text = "";
+            ddListState.SelectedItem.Text = "";
         }
     }
 }
