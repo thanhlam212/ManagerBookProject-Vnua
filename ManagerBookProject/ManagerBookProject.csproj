@@ -75,6 +75,7 @@
     <Content Include="AdminPublisherManagement.aspx" />
     <Content Include="Boostrap\css\bootstrap.min.css" />
     <Content Include="Boostrap\js\bootstrap.bundle.min.js" />
+    <Content Include="Boostrap\js\code.jquery.com_jquery-3.3.1.slim.min.js" />
     <Content Include="Boostrap\js\dist_js_bootstrap.min.js" />
     <Content Include="Boostrap\js\dist_umd_popper.min.js" />
     <Content Include="Fontawesome\css\all.css" />
@@ -128,7 +129,9 @@
     <Content Include="Image\stack-of-books.png" />
     <Content Include="Image\writer.png" />
     <Content Include="StyleSheet\CustomMainPage.css" />
+    <Content Include="Tabledata\css\cdn.datatables.net_1.10.19_css_jquery.dataTables.min.css" />
     <Content Include="Tabledata\css\cdn.datatables.net_1.13.6_css_jquery.dataTables.min.css" />
+    <Content Include="Tabledata\js\cdn.datatables.net_1.10.19_js_jquery.dataTables.min.js" />
     <Content Include="Tabledata\js\cdn.datatables.net_1.13.6_js_jquery.dataTables.min.js" />
     <Content Include="UserLogin.aspx" />
     <Content Include="UserProfile.aspx" />

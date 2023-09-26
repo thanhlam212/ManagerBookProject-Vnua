@@ -120,6 +120,8 @@ namespace ManagerBookProject
             BookIvt.Visible = false;
             BookIss.Visible = false;
             MemberMng.Visible = false;
+
+            Response.Redirect("HomePage.aspx");
         }
     }
 }
