@@ -7,22 +7,30 @@
     <title></title>
     <!--Bootstrap css-->
     <link href="Boostrap/css/bootstrap.min.css" rel="stylesheet" />
+
       <!--FontAwesome css-->
     <link href="Fontawesome/css/all.css" rel="stylesheet" />
-      <!--Datatable css-->
-    <link href="Tabledata/css/cdn.datatables.net_1.10.19_css_jquery.dataTables.min.css" rel="stylesheet" />
+
+      <!--Datatable css--> 
+    <link href="Tabledata/css/cdn.datatables.net_1.13.6_css_jquery.dataTables.min.css" rel="stylesheet" />
+
     <!--CSS custom-->
     <link href="StyleSheet/CustomMainPage.css" rel="stylesheet" />
+
+     <!--Jquery-->
+    <script src="Boostrap/js/code.jquery.com_jquery-3.3.1.slim.min.js"></script>
+    
     <!--Bootstrap js-->
     <script src="Boostrap/js/bootstrap.bundle.min.js"></script>
     <script src="Boostrap/js/dist_js_bootstrap.min.js"></script>
     <script src="Boostrap/js/dist_umd_popper.min.js"></script>
+
       <!--Fontawesome js-->
     <script src="Fontawesome/js/all.js"></script>
+
       <!--Datatable js-->
-    <script src="Tabledata/js/cdn.datatables.net_1.10.19_js_jquery.dataTables.min.js"></script>
-    <!--Jquery-->
-    <script src="Boostrap/js/code.jquery.com_jquery-3.3.1.slim.min.js"></script>
+    <script src="Tabledata/js/cdn.datatables.net_1.13.6_js_jquery.dataTables.min.js"></script>
+   
 
     <asp:ContentPlaceHolder ID="head" runat="server">
 

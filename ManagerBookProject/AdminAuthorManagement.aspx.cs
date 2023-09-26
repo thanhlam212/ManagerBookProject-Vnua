@@ -62,10 +62,40 @@ namespace ManagerBookProject
         //Go button click
         protected void GoBtn_Click(object sender, EventArgs e)
         {
-            AuthorDataTable.DataBind();
+            getAuthorByID();
         }
 
         //user defiend function
+
+        protected void getAuthorByID()
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(connectionString);
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+                SqlCommand cmd = new SqlCommand("select * from author_master_tbl WHERE author_id = '" + tbAuthorId.Text.Trim() + "';", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+
+                if (dt.Rows.Count >= 1)
+                {
+                    tbAuthorName.Text = dt.Rows[0][1].ToString();
+                    AuthorDataTable.DataBind();
+                }
+                else
+                {
+                    Response.Write("<script>alert('Invalid Author ID.');</script>");
+                }
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
+            }
+        }
 
         protected void deleteAuthor()
         {
@@ -82,7 +112,7 @@ namespace ManagerBookProject
                 cmd.ExecuteNonQuery();
                 con.Close();
                 Response.Write("<script>alert('Author Delete Successfully.');</script>");
-                clearForm();
+                clearField();
                 AuthorDataTable.DataBind();
             }
             catch (Exception ex)
@@ -110,7 +140,7 @@ namespace ManagerBookProject
                 cmd.ExecuteNonQuery();
                 con.Close();
                 Response.Write("<script>alert('Author Updated Successfully.');</script>");
-                clearForm();
+                clearField();
                 AuthorDataTable.DataBind();
             }
             catch(Exception ex)
@@ -139,7 +169,7 @@ namespace ManagerBookProject
                 
                 con.Close();
                 Response.Write("<script>alert('Author Added Successfully.');</script>");
-                clearForm();
+                clearField();
                 AuthorDataTable.DataBind(); 
             }
             catch(Exception ex)
@@ -180,7 +210,7 @@ namespace ManagerBookProject
             return false;
         }
 
-        protected void clearForm()
+        protected void clearField()
         {
             tbAuthorId.Text = " ";
             tbAuthorName.Text = " ";
