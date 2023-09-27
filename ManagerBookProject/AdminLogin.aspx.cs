@@ -36,7 +36,7 @@ namespace ManagerBookProject
                 {
                     while (dr.Read())
                     {
-                        Response.Write("<script>alert('Welcom Admin " + dr.GetValue(2).ToString() + "');</script>");
+                        Response.Write("<script>alert('Welcome Admin " + dr.GetValue(2).ToString() + "');</script>");
                         Response.Write("<script>alert('Login Successful !');</script>");
                         Session["username"] = dr.GetValue(0).ToString();
                         Session["fullname"] = dr.GetValue(2).ToString();
