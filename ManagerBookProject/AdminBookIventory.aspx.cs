@@ -156,11 +156,11 @@ namespace ManagerBookProject
                 }
 
                 SqlCommand cmd = new SqlCommand("INSERT INTO book_master_tbl" +
-                    "(book_id, book_name, genre, author_name, publisher_name, publisher_date, language" +
-                    "edition, book_cost, no_of_page, book_description, actual_stock, current_stock, book_img_link)" +
+                    "(boo_id, book_name, genre, author_name, publisher_name, publish_date, language," +
+                    "edition, book_cost, no_of_pages, book_description, actual_stock, curent_stock, book_img_link)" +
                     "VALUES " +
                     "(@book_id, @book_name, @genre, @author_name, @publisher_name, @publisher_date," +
-                    "@language, @edition, @book_cost, @no_of_page, @book_description, @actual_stock, @current_stock," +
+                    "@language, @edition, @book_cost, @no_of_pages, @book_description, @actual_stock, @current_stock," +
                     "@book_img_link)", con);
 
                 cmd.Parameters.AddWithValue("@book_id", tbBookID.Text.Trim());
@@ -169,8 +169,8 @@ namespace ManagerBookProject
 
                 cmd.Parameters.AddWithValue("@author_name", ddlAuthorName.SelectedItem.Value);
                 cmd.Parameters.AddWithValue("@publisher_name", ddlPublisherName.SelectedItem.Value);
-                cmd.Parameters.AddWithValue("@publish_date", tbBookPublisherDate.Text.Trim());
-                cmd.Parameters.AddWithValue("@language", ddlBookLangue.SelectedItem.Value);
+                cmd.Parameters.AddWithValue("@publisher_date", tbBookPublisherDate.Text.Trim());
+                cmd.Parameters.AddWithValue("@language", ddlBookLanguage.SelectedItem.Value);
                 cmd.Parameters.AddWithValue("@edition", tbBookEdition.Text.Trim());
                 cmd.Parameters.AddWithValue("@book_cost", tbBookCost.Text.Trim());
                 cmd.Parameters.AddWithValue("@no_of_pages", tbBookNoPages.Text.Trim());
@@ -181,8 +181,9 @@ namespace ManagerBookProject
 
                 cmd.ExecuteNonQuery();
                 con.Close();
-                Response.Write("<script>alert('Add Book successfully !');</script>");
+                Response.Write("<script>alert('Book Added Successfully !');</script>");
                 BookInventoryDataTable.DataBind();
+                ClearField();
             }
             catch (Exception ex )
             {
@@ -197,7 +198,7 @@ namespace ManagerBookProject
             ddlAuthorName.Text = "";
             ddlPublisherName.Text = "";
             tbBookPublisherDate.Text = "";
-            ddlBookLangue.Text = "";
+            ddlBookLanguage.Text = "";
             tbBookEdition.Text = "";
             tbBookCost.Text = "";
             tbBookNoPages.Text = "";

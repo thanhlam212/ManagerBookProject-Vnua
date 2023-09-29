@@ -51,13 +51,13 @@ namespace ManagerBookProject
         protected global::System.Web.UI.WebControls.TextBox tbBookName;
 
         /// <summary>
-        /// ddlBookLangue control.
+        /// ddlBookLanguage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlBookLangue;
+        protected global::System.Web.UI.WebControls.DropDownList ddlBookLanguage;
 
         /// <summary>
         /// ddlPublisherName control.
