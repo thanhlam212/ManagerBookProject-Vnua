@@ -70,7 +70,7 @@
                      <div class="col-md-4">
                         <label>Language</label>
                         <div class="form-group">
-                           <asp:DropDownList class="form-control" ID="ddlBookLangue" runat="server">
+                           <asp:DropDownList class="form-control" ID="ddlBookLanguage" runat="server">
                               <asp:ListItem Text="English" Value="English" />
                               <asp:ListItem Text="Hindi" Value="Hindi" />
                               <asp:ListItem Text="Marathi" Value="Marathi" />
@@ -216,21 +216,21 @@
                   <div class="row">
                       <asp:SqlDataSource ID="BookInventoryDataSource" runat="server" ConnectionString="<%$ ConnectionStrings:ebookDBConnectionString %>" SelectCommand="SELECT * FROM [book_master_tbl]"></asp:SqlDataSource>
                      <div class="col">
-                        <asp:GridView class="table table-striped table-bordered" ID="BookInventoryDataTable" runat="server" AutoGenerateColumns="False" DataKeyNames="book_id" DataSourceID="BookInventoryDataSource">
+                        <asp:GridView class="table table-striped table-bordered" ID="BookInventoryDataTable" runat="server" AutoGenerateColumns="False" DataKeyNames="boo_id" DataSourceID="BookInventoryDataSource">
                             <Columns>
-                                <asp:BoundField DataField="book_id" HeaderText="book_id" ReadOnly="True" SortExpression="book_id" />
+                                <asp:BoundField DataField="boo_id" HeaderText="boo_id" ReadOnly="True" SortExpression="boo_id" />
                                 <asp:BoundField DataField="book_name" HeaderText="book_name" SortExpression="book_name" />
                                 <asp:BoundField DataField="genre" HeaderText="genre" SortExpression="genre" />
                                 <asp:BoundField DataField="author_name" HeaderText="author_name" SortExpression="author_name" />
                                 <asp:BoundField DataField="publisher_name" HeaderText="publisher_name" SortExpression="publisher_name" />
-                                <asp:BoundField DataField="publisher_date" HeaderText="publisher_date" SortExpression="publisher_date" />
+                                <asp:BoundField DataField="publish_date" HeaderText="publish_date" SortExpression="publish_date" />
                                 <asp:BoundField DataField="language" HeaderText="language" SortExpression="language" />
                                 <asp:BoundField DataField="edition" HeaderText="edition" SortExpression="edition" />
                                 <asp:BoundField DataField="book_cost" HeaderText="book_cost" SortExpression="book_cost" />
-                                <asp:BoundField DataField="no_of_page" HeaderText="no_of_page" SortExpression="no_of_page" />
+                                <asp:BoundField DataField="no_of_pages" HeaderText="no_of_pages" SortExpression="no_of_pages" />
                                 <asp:BoundField DataField="book_description" HeaderText="book_description" SortExpression="book_description" />
                                 <asp:BoundField DataField="actual_stock" HeaderText="actual_stock" SortExpression="actual_stock" />
-                                <asp:BoundField DataField="current_stock" HeaderText="current_stock" SortExpression="current_stock" />
+                                <asp:BoundField DataField="curent_stock" HeaderText="curent_stock" SortExpression="curent_stock" />
                                 <asp:BoundField DataField="book_img_link" HeaderText="book_img_link" SortExpression="book_img_link" />
                             </Columns>
                          </asp:GridView>
