@@ -224,6 +224,7 @@
                      <div class="col">
                         <asp:GridView class="table table-striped table-bordered" ID="BookInventoryDataTable" runat="server" AutoGenerateColumns="False" DataKeyNames="boo_id" DataSourceID="BookInventoryDataSource">
                             <Columns>
+
                                 <asp:BoundField DataField="boo_id" HeaderText="ID" ReadOnly="True" SortExpression="boo_id" />
                                 
                                 <asp:TemplateField>
@@ -296,7 +297,7 @@
                                         </div>
                                     </ItemTemplate>
                                 </asp:TemplateField>
-                                
+                               
                             </Columns>
                          </asp:GridView>
                      </div>
