@@ -195,10 +195,10 @@ namespace ManagerBookProject
         {
             tbBookID.Text = "";
             tbBookName.Text = "";
-            ddlAuthorName.Text = "";
-            ddlPublisherName.Text = "";
+            ddlAuthorName.SelectedItem.Value = "";
+            ddlPublisherName.SelectedItem.Value = "";
             tbBookPublisherDate.Text = "";
-            ddlBookLanguage.Text = "";
+            ddlBookLanguage.SelectedItem.Value = "";
             tbBookEdition.Text = "";
             tbBookCost.Text = "";
             tbBookNoPages.Text = "";
