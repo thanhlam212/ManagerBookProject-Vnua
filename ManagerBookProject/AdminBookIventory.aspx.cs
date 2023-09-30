@@ -23,9 +23,10 @@ namespace ManagerBookProject
             BookInventoryDataTable.DataBind();
         }
 
+        //Go Button Click
         protected void GoBtnClick(object sender, EventArgs e)
         {
-            
+            GetBookByID();
         }
 
         //Add button click
@@ -54,6 +55,61 @@ namespace ManagerBookProject
         }
 
         //User defined functions
+
+        protected void GetBookByID()
+        {
+            try
+            {
+                SqlConnection con = new SqlConnection(connectionString);
+                if (con.State == ConnectionState.Closed)
+                {
+                    con.Open();
+                }
+                SqlCommand cmd = new SqlCommand("SELECT * FROM book_master_tbl WHERE boo_id = '"+ tbBookID.Text.Trim() +"'", con);
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                if (dt.Rows.Count >= 1)
+                {
+                    tbBookName.Text = dt.Rows[0]["book_name"].ToString();
+                    tbBookPublisherDate.Text = dt.Rows[0]["publish_date"].ToString();
+                    tbBookEdition.Text = dt.Rows[0]["edition"].ToString();
+                    tbBookCost.Text = dt.Rows[0]["book_cost"].ToString().Trim();
+                    tbBookNoPages.Text = dt.Rows[0]["no_of_pages"].ToString().Trim();
+                    tbBookActualStock.Text = dt.Rows[0]["actual_stock"].ToString().Trim();
+                    tbBookCurrentStock.Text = dt.Rows[0]["curent_stock"].ToString().Trim();
+                    tbBookDerscription.Text = dt.Rows[0]["book_description"].ToString();
+                    tbBookIssued.Text = "" + ( Convert.ToInt32(dt.Rows[0]["actual_stock"].ToString()) - Convert.ToInt32(dt.Rows[0]["curent_stock"].ToString()));
+
+                    ddlBookLanguage.SelectedValue = dt.Rows[0]["language"].ToString().Trim();
+                    ddlPublisherName.SelectedValue = dt.Rows[0]["publisher_name"].ToString().Trim();
+                    ddlAuthorName.SelectedValue = dt.Rows[0]["author_name"].ToString().Trim();
+
+                    GenresBook.ClearSelection();
+                    string[] genre = dt.Rows[0]["genre"].ToString().Trim().Split(',');
+                    for(int i = 0; i < genre.Length; i++)
+                    {
+                        for(int j = 0; j < GenresBook.Items.Count; j++)
+                        {
+                            if (GenresBook.Items[j].ToString() == genre[i])
+                            {
+                                GenresBook.Items[j].Selected = true;
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    Response.Write("<script>alert('Invalid Book ID.');</script>");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
+            }
+        }
+
         protected void fillAuthorValues()
         {
             try
