@@ -88,7 +88,7 @@ namespace ManagerBookProject
 
         protected void BookIvt_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AdminBookInventory.aspx");
+            Response.Redirect("AdminBookIventory.aspx");
         }
 
         protected void BookIss_Click(object sender, EventArgs e)
