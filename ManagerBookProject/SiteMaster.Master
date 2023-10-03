@@ -60,27 +60,27 @@
 
       <ul class="navbar-nav text-light">
       <li class="nav-item active active">
-          <asp:LinkButton ID="LinkButton1" class="nav-link" href="#" runat="server">
+          <asp:LinkButton ID="LinkButton1" class="nav-link"  runat="server" OnClick="LinkButton1_Click">
               View Book
           </asp:LinkButton>
       </li>
       <li class="nav-item active">
-      <asp:LinkButton ID="signUpLink" class="nav-link" href="UserSignUp.aspx" runat="server">
+      <asp:LinkButton ID="signUpLink" class="nav-link" runat="server" OnClick="signUpLink_Click">
              Sign Up
           </asp:LinkButton>
       </li>
       <li class="nav-item active">
-       <asp:LinkButton ID="logOutLink"  class="nav-link" href="HomePage.aspx" runat="server" Visible="False" OnClick="logOutLink_Click">
+       <asp:LinkButton ID="logOutLink"  class="nav-link"  runat="server" Visible="False" OnClick="logOutLink_Click">
               Logout
           </asp:LinkButton>
       </li>
            <li class="nav-item active">
-       <asp:LinkButton ID="userLink" class="nav-link" href="UserLogin.aspx" runat="server">
+       <asp:LinkButton ID="userLink" class="nav-link"  runat="server" OnClick="userLink_Click">
              User Login
           </asp:LinkButton>
       </li>
           <li class="nav-item active">
-       <asp:LinkButton ID="HelooUserLink" class="nav-link" href="UserLogin.aspx" runat="server">
+       <asp:LinkButton ID="HelooUserLink" class="nav-link" runat="server">
              Hello User
           </asp:LinkButton>
       </li>

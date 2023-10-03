@@ -139,6 +139,7 @@
     <Content Include="UserSignUp.aspx" />
     <Content Include="Web.config" />
     <Content Include="HomePage.aspx" />
+    <Content Include="ViewBook.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AdminAuthorManagement.aspx.cs">
@@ -221,6 +222,13 @@
     </Compile>
     <Compile Include="UserSignUp.aspx.designer.cs">
       <DependentUpon>UserSignUp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBook.aspx.cs">
+      <DependentUpon>ViewBook.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewBook.aspx.designer.cs">
+      <DependentUpon>ViewBook.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
