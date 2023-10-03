@@ -108,7 +108,8 @@
                             &nbsp;
                             <asp:LinkButton class="footerlinks" ID="PublisherMng" runat="server" OnClick="PublisherMng_Click" Visible="False">Publisher Management</asp:LinkButton>
                             &nbsp;
-                            <asp:LinkButton class="footerlinks" ID="BookIvt" runat="server" OnClick="BookIvt_Click" Visible="False">Book Inventory</asp:LinkButton>
+
+                            <asp:LinkButton class="footerlinks" ID="BookIvt"  runat="server" OnClick="BookIvt_Click" Visible="False">Book Inventory</asp:LinkButton>
                             &nbsp;
                             <asp:LinkButton class="footerlinks" ID="BookIss" runat="server" OnClick="BookIss_Click" Visible="False">Book Issuing</asp:LinkButton>
                             &nbsp;
