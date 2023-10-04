@@ -101,6 +101,22 @@ namespace ManagerBookProject
             Response.Redirect("AdminMemberManagement.aspx");
         }
 
+        protected void userLink_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("UserLogin.aspx");
+        }
+
+        protected void signUpLink_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("UserSignUp.aspx");
+        }
+
+        //View Book Button
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ViewBook.aspx");
+        }
+
         protected void logOutLink_Click(object sender, EventArgs e)
         {
             Session["username"] = " ";
@@ -123,5 +139,7 @@ namespace ManagerBookProject
 
             Response.Redirect("HomePage.aspx");
         }
+
+        
     }
 }
