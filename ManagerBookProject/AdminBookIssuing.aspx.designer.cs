@@ -15,22 +15,22 @@ namespace ManagerBookProject
     {
 
         /// <summary>
-        /// TextBox2 control.
+        /// tbMemberID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox tbMemberID;
 
         /// <summary>
-        /// TextBox1 control.
+        /// tbBookID control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.TextBox tbBookID;
 
         /// <summary>
         /// Button1 control.
@@ -42,22 +42,22 @@ namespace ManagerBookProject
         protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// TextBox3 control.
+        /// tbMemberName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox tbMemberName;
 
         /// <summary>
-        /// TextBox4 control.
+        /// tbBookName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.TextBox tbBookName;
 
         /// <summary>
         /// TextBox5 control.
@@ -78,30 +78,39 @@ namespace ManagerBookProject
         protected global::System.Web.UI.WebControls.TextBox TextBox6;
 
         /// <summary>
-        /// Button2 control.
+        /// IssueBookBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button IssueBookBtn;
 
         /// <summary>
-        /// Button4 control.
+        /// ReturnBookBtn control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button4;
+        protected global::System.Web.UI.WebControls.Button ReturnBookBtn;
 
         /// <summary>
-        /// GridView1 control.
+        /// BookIssuingDataSource control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.SqlDataSource BookIssuingDataSource;
+
+        /// <summary>
+        /// BookIssuingDataTable control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView BookIssuingDataTable;
     }
 }
