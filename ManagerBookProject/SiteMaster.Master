@@ -80,7 +80,7 @@
           </asp:LinkButton>
       </li>
           <li class="nav-item active">
-       <asp:LinkButton ID="HelooUserLink" class="nav-link" runat="server">
+       <asp:LinkButton ID="HelooUserLink" class="nav-link" runat="server" OnClick="HelooUserLink_Click">
              Hello User
           </asp:LinkButton>
       </li>
