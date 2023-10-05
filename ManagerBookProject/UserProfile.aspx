@@ -24,7 +24,7 @@
                         <center>
                            <h4>Your Profile</h4>
                            <span>Account Status - </span>
-                           <asp:Label class="badge bg-secondary" ID="Label1" runat="server" Text="Your status"></asp:Label>
+                           <asp:Label class="badge rounded-pill text-bg-warning" ID="Label1" runat="server" Text="Your status"></asp:Label>
                         </center>
                      </div>
                   </div>
@@ -138,13 +138,13 @@
                      <div class="col-md-4">
                         <label>Old Password</label>
                         <div class="form-group">
-                           <asp:TextBox class="form-control" ID="tbUserPassword" runat="server" placeholder="Email ID" TextMode="Password" ReadOnly="True"></asp:TextBox>
+                           <asp:TextBox class="form-control" ID="tbUserPassword" runat="server" placeholder="Old Password" ReadOnly="True"></asp:TextBox>
                         </div>
                      </div>
                      <div class="col-md-4">
                         <label>New Password</label>
                         <div class="form-group mb-3">
-                           <asp:TextBox class="form-control" ID="TextBox10" runat="server" placeholder="Email ID" TextMode="Password"></asp:TextBox>
+                           <asp:TextBox class="form-control" ID="TextBox10" runat="server" placeholder="New Password" TextMode="Password"></asp:TextBox>
                         </div>
                      </div>
                   </div>
