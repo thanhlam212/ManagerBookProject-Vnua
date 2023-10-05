@@ -16,6 +16,7 @@ namespace ManagerBookProject
         protected void Page_Load(object sender, EventArgs e)
         {
             BookIssuingDataTable.DataBind();
+           
         }
 
         //Go Button Click
@@ -61,6 +62,41 @@ namespace ManagerBookProject
             else
             {
                 Response.Write("<script>alert('Wrong Book ID Or Member ID');</script>");
+            }
+        }
+
+        protected void BookIssuingDataTable_RowDataBound(object sender, GridViewRowEventArgs e)
+        {
+            try
+            {
+                if (e.Row.RowType == DataControlRowType.DataRow)
+                {
+                    //Check your condition here
+                    DateTime dt = Convert.ToDateTime(e.Row.Cells[5].Text);
+                    DateTime today = DateTime.Today;
+                    if (today > dt)
+                    {
+                        e.Row.Cells[0].BackColor = System.Drawing.Color.PaleVioletRed;
+                        e.Row.Cells[1].BackColor = System.Drawing.Color.PaleVioletRed;
+                        e.Row.Cells[2].BackColor = System.Drawing.Color.PaleVioletRed;
+                        e.Row.Cells[3].BackColor = System.Drawing.Color.PaleVioletRed;
+                        e.Row.Cells[4].BackColor = System.Drawing.Color.PaleVioletRed;
+                        e.Row.Cells[5].BackColor = System.Drawing.Color.PaleVioletRed;
+                    }
+                    else
+                    {
+                        e.Row.Cells[0].BackColor = System.Drawing.Color.PaleGreen;
+                        e.Row.Cells[1].BackColor = System.Drawing.Color.PaleGreen;
+                        e.Row.Cells[2].BackColor = System.Drawing.Color.PaleGreen;
+                        e.Row.Cells[3].BackColor = System.Drawing.Color.PaleGreen;
+                        e.Row.Cells[4].BackColor = System.Drawing.Color.PaleGreen;
+                        e.Row.Cells[5].BackColor = System.Drawing.Color.PaleGreen;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
         }
 
@@ -274,27 +310,6 @@ namespace ManagerBookProject
             {
                 Response.Write("<script>alert('" + ex.Message + "');</script>");
             }
-        }
-
-        protected void BookIssuingDataTable_RowDataBound(object sender, GridViewRowEventArgs e)
-        {
-            try
-            {
-                if (e.Row.RowType == DataControlRowType.DataRow)
-                {
-                    //Check your condition here
-                    DateTime dt = Convert.ToDateTime(e.Row.Cells[5].Text);
-                    DateTime today = DateTime.Today;
-                    if (today > dt)
-                    {
-                        e.Row.BackColor = System.Drawing.Color.PaleVioletRed;
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                Response.Write("<script>alert('" + ex.Message + "');</script>");
-            }
-        }
+        }  
     }
 }
