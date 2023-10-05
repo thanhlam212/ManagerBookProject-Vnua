@@ -5,11 +5,6 @@
            $(".table").prepend($("<thead></thead>").append($(this).find("tr:first"))).dataTable();
        });
      </script>
-    <style type="text/css">
-        .auto-style1 {
-            margin-right: 9;
-        }
-    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="MainContent" runat="server">
     <div class="container-fluid">
