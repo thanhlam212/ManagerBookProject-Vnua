@@ -117,6 +117,11 @@ namespace ManagerBookProject
             Response.Redirect("ViewBook.aspx");
         }
 
+        protected void HelooUserLink_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("UserProfile.aspx");
+        }
+
         protected void logOutLink_Click(object sender, EventArgs e)
         {
             Session["username"] = "";
@@ -140,6 +145,6 @@ namespace ManagerBookProject
             Response.Redirect("HomePage.aspx");
         }
 
-        
+       
     }
 }
