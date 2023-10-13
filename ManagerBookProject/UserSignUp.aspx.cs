@@ -25,14 +25,14 @@ namespace ManagerBookProject
         //Sign Up button click event
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (checkEmailExits())
-            {
-                Response.Write("<script>alert('Member Already Exits with this Member ID, Try Orther ID');</script>");
-            }
-            else
-            {
-                SignUpMember();
-            }
+                if (checkEmailExits())
+                {
+                    Response.Write("<script>alert('Member Already Exits with this Member ID, Try Orther ID');</script>");
+                }
+                else
+                {
+                    SignUpMember();
+                }
         }
 
         protected bool checkEmailExits()
