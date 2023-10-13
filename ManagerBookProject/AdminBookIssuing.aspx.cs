@@ -76,12 +76,12 @@ namespace ManagerBookProject
                     DateTime today = DateTime.Today;
                     if (today > dt)
                     {
-                        e.Row.Cells[0].BackColor = System.Drawing.Color.PaleVioletRed;
-                        e.Row.Cells[1].BackColor = System.Drawing.Color.PaleVioletRed;
-                        e.Row.Cells[2].BackColor = System.Drawing.Color.PaleVioletRed;
-                        e.Row.Cells[3].BackColor = System.Drawing.Color.PaleVioletRed;
-                        e.Row.Cells[4].BackColor = System.Drawing.Color.PaleVioletRed;
-                        e.Row.Cells[5].BackColor = System.Drawing.Color.PaleVioletRed;
+                        e.Row.Cells[0].BackColor = System.Drawing.Color.Red;
+                        e.Row.Cells[1].BackColor = System.Drawing.Color.Red;
+                        e.Row.Cells[2].BackColor = System.Drawing.Color.Red;
+                        e.Row.Cells[3].BackColor = System.Drawing.Color.Red;
+                        e.Row.Cells[4].BackColor = System.Drawing.Color.Red;
+                        e.Row.Cells[5].BackColor = System.Drawing.Color.Red;
                     }
                     else
                     {
