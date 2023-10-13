@@ -73,7 +73,7 @@ namespace ManagerBookProject
                 }
 
 
-                SqlCommand cmd = new SqlCommand("UPDATE member_master_table SET" +
+                SqlCommand cmd = new SqlCommand("UPDATE member_master_tbl SET" +
                     " full_name=@full_name, dob=@dob, contact_no=@contact_no," +
                     " email=@email, state=@state, city=@city, pincode=@pincode," +
                     " full_address=@full_address, password=@password, account_status=@account_status" +
@@ -140,15 +140,15 @@ namespace ManagerBookProject
 
                 if (dt.Rows[0]["account_status"].ToString().Trim() == "Active")
                 {
-                    Label1.Attributes.Add("class", "badge bg-success");
+                    Label1.Attributes.Add("class", "badge rounded-pill text-bg-success");
                 }
-                else if (dt.Rows[0]["account_status"].ToString().Trim() == "Pending")
+                else if (dt.Rows[0]["account_status"].ToString().Trim() == "pending")
                 {
-                    Label1.Attributes.Add("class", "badge bg-warning");
+                    Label1.Attributes.Add("class", "badge rounded-pill text-bg-warning");
                 }
                 else if (dt.Rows[0]["account_status"].ToString().Trim() == "Dissable")
                 {
-                    Label1.Attributes.Add("class", "badge bg-danger");
+                    Label1.Attributes.Add("class", "badge rounded-pill text-bg-danger");
                 }
                 else
                 {
